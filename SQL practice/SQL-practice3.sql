@@ -55,3 +55,39 @@ SELECT
  JOIN employees m
     ON  e.reports_to = m.employee_id;
     
+  -- alter  
+     alter table sql_store.customers add Age int;
+    update sql_store.customers
+set Age = 23 
+where customer_id=1; 
+update sql_store.customers
+set Age = 24 
+where customer_id=2; 
+update sql_store.customers
+set Age = 25
+where customer_id=3; 
+update sql_store.customers
+set Age = 26 
+where customer_id=4; 
+update sql_store.customers
+set Age = 27
+where customer_id=5; 
+update sql_store.customers
+set Age = 28 
+where customer_id=6; 
+update sql_store.customers
+set Age = 21 
+where customer_id=7; 
+update sql_store.customers
+set Age = 22
+where customer_id=8; 
+update sql_store.customers
+set Age = 23 
+where customer_id=9; 
+update sql_store.customers
+set Age = 25
+where customer_id=10; 
+    select * from sql_store.customers;
+    
+
+    
