@@ -36,10 +36,11 @@ order_date, comments,
 FROM sql_store.orders
 WHERE order_date < '2019-01-01';
 
+-- insert
 INSERT into sql_store.orders(order_id,customer_id, order_date, status, comments, shipped_date, shipper_id)
 Values ('16','5','2023-05-01','1','new order placed','2023-05,03','5');
 
-
+-- update
 update sql_store.orders
 set comments = 'Comment updated' 
 where order_id=6; 
